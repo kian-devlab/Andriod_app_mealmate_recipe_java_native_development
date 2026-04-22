@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "840784212999",
+    "project_id": "mealmate-recipesapp-db26a",
+    "storage_bucket": "mealmate-recipesapp-db26a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840784212999:android:256d92364667085b3da6a2",
+        "android_client_info": {
+          "package_name": "com.pkk.mealmate_recipesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA-g7rpv_0RuXJl6XSwCoHZd7RG_r-T_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

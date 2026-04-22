@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MealMate_RecipesApp"
+        tools:targetApi="31">
+
+        <!-- Splash Screen (Launcher Activity) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main" />
+
+        <!-- Authentication Activities -->
+        <activity android:name=".LoginActivity" android:exported="true" />
+        <activity android:name=".SingUpActivity" android:exported="true" />
+
+        <!-- Recipe Activities -->
+        <activity android:name=".AddRecipeActivity" android:exported="false" />
+        <activity android:name=".AllRecipesActivity" android:exported="false" />
+        <activity android:name=".RecipeDetailsActivity" android:exported="false" />
+
+        <!-- Settings -->
+        <activity android:name=".SettingActivity" android:exported="false" />
+
+        <!-- ✅ Newly Added Activities -->
+        <activity android:name=".MealPlanActivity" android:exported="false" />
+        <activity android:name=".GroceryListActivity" android:exported="false" />
+
+        <!-- Image Picker Provider -->
+        <provider
+            android:name="com.vansuita.pickimage.provider.PickImageFileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+    </application>
+</manifest>
