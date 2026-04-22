@@ -55,9 +55,3 @@ Before you begin, ensure you have met the following requirements:
 * **Material Design:** The app follows Google's Material Design guidelines for a modern and user-friendly interface.
 
 ---
-
-## Contributing
-*(Note: This section was included in the Table of Contents but missing from the body text. Add your contribution guidelines here.)*
-
-## License
-*(Note: This section was included in the Table of Contents but missing from the body text. Add your license information here.)*
